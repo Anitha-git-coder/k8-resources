@@ -4,10 +4,10 @@ metadata:
   name: multi-container
   labels: 
     purpose: multi-container
-  spec: 
-    containers: # list of containers , nginx,almalinux
-    - name: nginx
-      image: nginx
-    - name: almalinux
-      image: almalinux:9
-      command: ["sleep", "1000"]
+spec: 
+  containers: # list of containers , nginx,almalinux
+  - name: nginx
+    image: nginx
+  - name: almalinux
+    image: almalinux:9
+    command: ["sleep", "1000"]
