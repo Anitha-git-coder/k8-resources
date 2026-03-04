@@ -3,7 +3,11 @@ kind: Pod
 metadata:
   name: annotations
   annotations:
-  jenkins.url: http://jenkins.joindevops.com/build/job/5" 
+  jenkins.url: http://jenkins.joindevops.com/build/job/5"
   imageregistory: "https://hub.docker.com"
+  spec:
+    containers:
+    - name: nginx
+      image: nginx
 
 
