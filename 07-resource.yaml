@@ -3,14 +3,13 @@ kind: Pod
 metadata:
   name: resources-demo
 spec:
-  containers: 
+  containers:
   - name: nginx
     image: nginx
-    resources: 
-      requests: 
+    resources:
+      requests:
         memory: "68Mi"
-        cpu: "100m" #1/10 of CPU
-      # provide equal or more than request
-    limits:  
-      memory: "100Mi"
-      cpu: "120m"
+        cpu: "100m"   # 0.1 CPU
+      limits:
+        memory: "100Mi"
+        cpu: "120m"
