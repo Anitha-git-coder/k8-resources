@@ -13,6 +13,7 @@ metadata:
 
     - name: almalinux
       image: almalinux:9
+      command: ["sleep","1000"]
       volumeMounts:
       - mountPath: /mnt/nginx-log
         name: nginx-logs
